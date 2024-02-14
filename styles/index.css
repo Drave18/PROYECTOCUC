@@ -1,11 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 body{
     background-color: #18181B;
     color: white;
     font-family: "Fira Code", monospace;
 }
+
 .container{
     max-width: 1200px;
     margin: auto;
@@ -14,13 +20,16 @@ body{
 .easter{
     text-align: center;
         font-size: 1.25rem;
-        font-weight: 300;
+        font-weight: 400;
+    margin-top: 14rem;
+    color: #CFCFCF;
 }
 
 .intro h1{
         font-family: "Fira Code";
         font-size: 5.25rem;
         font-weight: 700;
+        margin-top: 3rem;
 }
 .intro h2{
     color: #CFCFCF;
@@ -28,35 +37,23 @@ body{
     font-size: 1.875rem;
     font-weight: 400;
 }
-
-footer{
-    background-color: #151515;
-    height: 25rem;
+strong, h3{
+    font-size: 1.6rem;
 }
-footer .container{
-    display: flex;
+p{
+    font-size: 1.4rem;
 }
-footer .texts{
-    width: 50%;
-}
-footer .references {
-    width: 50%;
-}
-
-
-
-
-
-
 
 /* BOTONES EFECTO */
 .button-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 8rem;
 }
 .button-profile{
   display: flex;
-  margin: 20px;
+  margin: 50px;
   align-items: last baseline;
   text-indent: 6px;
   text-decoration: none;
@@ -78,3 +75,104 @@ footer .references {
 }
 
 /* BOTONES EFECTO */
+main{
+    margin-top: 12rem;
+}
+ul{
+    padding-inline-start: 40px;
+}
+.text-container{
+    margin-top: 5rem;
+}
+.text-container ul{
+    margin-top: 2rem;
+}
+.text-container ul li{
+    margin-top: 1rem;
+}
+.text-container p{
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #111111;
+    margin-top: 10rem;
+        padding-top: 2rem;
+            padding-bottom: 2rem;
+}
+
+footer .divided {
+    display: flex;
+    font-family: "Inter", sans-serif;
+}
+
+footer .texts {
+    padding-right: 3rem;
+}
+.texts h3{
+    font-size: 1.25rem;
+}
+.texts:first-child {
+    margin-top: 0;
+}
+.texts__content{
+    margin-top: 1.5rem;
+}
+.texts__content:first-child {
+   margin: 0; 
+}
+
+.texts__content p{
+    color: #A5A5A5;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+footer .references {
+    padding-left: 3rem;
+}
+footer .references h3{
+    font-size: 1.25rem;
+}
+
+footer .container .references p{
+    color: #A5A5A5;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+footer .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+footer .line img {
+    width: 3.375rem;
+    height: 3.375rem;
+}
+footer .line p{
+    font-size: 1rem;
+}
+.highlighted {
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+    main, footer .container{
+        padding: 10px;
+    }
+    footer .divided {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .references{
+        padding: 0;
+    }
+    footer .line{
+        flex-direction: column;
+    }
+}

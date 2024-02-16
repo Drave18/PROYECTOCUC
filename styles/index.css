@@ -184,7 +184,7 @@ footer .line p{
 }
 
 
-@media screen and (min-width: 400px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     main, footer .container{
         padding: 10px;
     }
@@ -224,6 +224,13 @@ footer .line p{
     .button-profile {
         width: 48px;
         height: 50px;
+    }
+    .line-box-names {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
     }
     p {
         font-size: calc(0.1dvw + 1rem);

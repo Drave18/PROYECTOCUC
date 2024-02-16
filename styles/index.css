@@ -215,6 +215,13 @@ footer .line p{
     html {
         font-size: 75%;
     }
+    .intro span h1 {
+        display: none;
+        font-family: "Fira Code";
+        font-size: 5.25rem;
+        font-weight: 700;
+        margin-top: 3rem;
+    }
     .intro h1 {
         font-size: calc(4dvw + 1rem);
         margin-top: 1rem;

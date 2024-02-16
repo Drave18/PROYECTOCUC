@@ -215,13 +215,9 @@ footer .line p{
     html {
         font-size: 75%;
     }
-    .intro span h1 {
-        display: none;
-        font-size: 5rem;
-        font-weight: 700;
-    }
     .intro h1 {
         margin-top: 1rem;
+        font-size: 4.8rem;
     }
     .intro {
         display: grid;

@@ -217,14 +217,16 @@ footer .line p{
     }
     .intro span h1 {
         display: none;
-        font-family: "Fira Code";
-        font-size: 5.25rem;
+        font-size: 5rem;
         font-weight: 700;
-        margin-top: 3rem;
     }
     .intro h1 {
-        font-size: calc(4dvw + 1rem);
         margin-top: 1rem;
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
     .intro h2 {
         font-size: calc(1dvw + 0.6rem);

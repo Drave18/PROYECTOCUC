@@ -5,11 +5,21 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #18181B;
     color: white;
     font-family: "Fira Code", monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+}
+
+span {
+    color: #d1d1d1;
 }
 
 .container{

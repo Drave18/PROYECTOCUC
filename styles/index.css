@@ -216,7 +216,7 @@ footer .line p{
         font-size: 75%;
     }
     .intro h1 {
-        font-size: calc(5dvw + 1rem);
+        font-size: calc(4.2dvw + 1rem);
     }
     .intro h2 {
         font-size: calc(1dvw + 0.5rem);
@@ -225,6 +225,12 @@ footer .line p{
         width: 48px;
         height: 50px;
     }
+    
+    p {
+        font-size: calc(0.1dvw + 1rem);
+    }
+}
+@media screen and (max-width: 720px) {
     .line-box-names {
         flex-direction: column;
         justify-content: center;
@@ -232,8 +238,14 @@ footer .line p{
         width: 100%;
         gap: 1rem;
     }
-    p {
-        font-size: calc(0.1dvw + 1rem);
+    .button-profile {
+        width: 38px;
+        height: 40px;
+        font-size: 2rem;
+    }
+
+    .button-profile {
+        margin: 30px;
     }
 }
 

@@ -216,14 +216,18 @@ footer .line p{
         font-size: 75%;
     }
     .intro h1 {
-        font-size: calc(4.2dvw + 1rem);
+        font-size: calc(4dvw + 1rem);
+        margin-top: 1rem;
     }
     .intro h2 {
-        font-size: calc(1dvw + 0.5rem);
+        font-size: calc(1dvw + 0.6rem);
     }
     .button-profile {
         width: 48px;
         height: 50px;
+    }
+    .text-container p {
+        margin-left: 0.5rem;
     }
     
     p {

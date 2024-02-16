@@ -11,6 +11,8 @@ body{
     background-color: #18181B;
     color: white;
     font-family: "Fira Code", monospace;
+    overflow-x: hidden;
+    width: 100dvw;
 }
 
 a {
@@ -21,6 +23,11 @@ a {
 span {
     color: #d1d1d1;
 }
+#hero {
+    height: 100dvh;
+    display: grid;
+    place-content: center;
+}
 
 .container{
     max-width: 1200px;
@@ -29,17 +36,16 @@ span {
 
 .easter{
     text-align: center;
-        font-size: 1.25rem;
-        font-weight: 400;
-    margin-top: 14rem;
+    font-size: 1.25rem;
+    font-weight: 400;
     color: #CFCFCF;
 }
 
 .intro h1{
-        font-family: "Fira Code";
-        font-size: 5.25rem;
-        font-weight: 700;
-        margin-top: 3rem;
+    font-family: "Fira Code";
+    font-size: 5.25rem;
+    font-weight: 700;
+    margin-top: 3rem;
 }
 .intro h2{
     color: #CFCFCF;
@@ -59,7 +65,7 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 .button-profile{
   display: flex;
@@ -85,14 +91,12 @@ p{
 }
 
 /* BOTONES EFECTO */
-main{
-    margin-top: 12rem;
-}
 ul{
     padding-inline-start: 40px;
 }
 .text-container{
     margin-top: 5rem;
+    padding: 1rem;
 }
 .text-container ul{
     margin-top: 2rem;
@@ -102,22 +106,24 @@ ul{
 }
 .text-container p{
     margin-top: 1rem;
+    margin-left: 2rem;
 }
 
 footer {
     background-color: #111111;
     margin-top: 10rem;
-        padding-top: 2rem;
-            padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 footer .divided {
     display: flex;
     font-family: "Inter", sans-serif;
+    padding: 0 2rem;
 }
 
 footer .texts {
     padding-right: 3rem;
+    
 }
 .texts h3{
     font-size: 1.25rem;
@@ -156,6 +162,7 @@ footer .line {
     justify-content: space-between;
     align-items: center;
     margin-top: 5rem;
+    padding: 1rem;
 }
 
 
@@ -169,6 +176,12 @@ footer .line p{
 .highlighted {
     font-weight: 700;
 }
+.line-box-names {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+}
 
 
 @media screen and (min-width: 400px) and (max-width: 900px) {
@@ -179,14 +192,43 @@ footer .line p{
         display: flex;
         flex-direction: column;
     }
+    hr {
+        margin: 2rem 0;
+    }
     footer .references{
         padding: 0;
     }
     footer .line{
         flex-direction: column;
+        gap: 2rem;
     }
 }
-
+@media screen and (max-width: 1025px) {
+    html {
+        font-size: 85%;
+    }
+    footer .line {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 875px) {
+    html {
+        font-size: 75%;
+    }
+    .intro h1 {
+        font-size: calc(5dvw + 1rem);
+    }
+    .intro h2 {
+        font-size: calc(1dvw + 0.5rem);
+    }
+    .button-profile {
+        width: 48px;
+        height: 50px;
+    }
+    p {
+        font-size: calc(0.1dvw + 1rem);
+    }
+}
 
 /* ANIMACION CURSOR */
 
